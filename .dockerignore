@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+# investigate how are environment variable (API keys, database credentials)
+# are to be passed to the container at runtime or managed through secure 
+# secret management solutions.
+.env
+.git
+.gitignore
+.DS_store
+README.md
+LICENSE
+Dockerfile
+docker-compose.yml
+*.log
+tmp/
