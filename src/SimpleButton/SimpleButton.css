@@ -1,0 +1,43 @@
+.SimpleButton {
+  justify-content: wrapper;
+  cursor: pointer;
+}
+
+.SimpleButton a {
+  border-radius: 8px;
+}
+
+.SimpleButton-primary {
+  background-color: #458EFE;
+}
+
+.SimpleButton-secondary {
+  background-color: #6c757d;
+}
+
+.SimpleButton-success {
+  background-color: #32CB76;
+}
+
+.SimpleButton-danger {
+  background-color: #F85F60;
+}
+
+.SimpleButton-warning {
+  background-color: #ffc107;
+}
+
+.SimpleButton-info {
+  background-color: #0dcaf0;
+}
+
+.SimpleButton-size-XXL {
+  padding: 32px;
+}
+
+.SimpleButton-text {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
