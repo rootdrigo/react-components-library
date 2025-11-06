@@ -1,43 +1,112 @@
-.SimpleButton {
-  justify-content: wrapper;
-  cursor: pointer;
+button:not(:disabled) {
+  cursor: pointer; 
 }
 
-.SimpleButton a {
-  border-radius: 8px;
-}
-
-.SimpleButton-primary {
-  background-color: #458EFE;
-}
-
-.SimpleButton-secondary {
-  background-color: #6c757d;
-}
-
-.SimpleButton-success {
-  background-color: #32CB76;
-}
-
-.SimpleButton-danger {
-  background-color: #F85F60;
-}
-
-.SimpleButton-warning {
-  background-color: #ffc107;
-}
-
-.SimpleButton-info {
-  background-color: #0dcaf0;
-}
-
-.SimpleButton-size-XXL {
-  padding: 32px;
-}
-
-.SimpleButton-text {
-  color: white;
-  font-size: 1em;
+.sb {
+  /*default values*/
+  --sb-color: black;
+  --sb-background: transparent;
+  --sb-border-radius: 0.25rem;
+  --sb-border-width: 1px;
+  --sb-border-color: black;
+  --sb-font-size: 1rem;
+  --sb-horizontal-padding: 1rem;
+  --sb-vertical-padding: 1rem;
+  display: inline-block;
+  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  vertical-align: middle;
+  /*configuration*/
+  color: var(--sb-color);
+  background-color: var(--sb-background);
+  border-radius: var(--sb-border-radius);
+  border: var(--sb-border-width) solid var(--sb-border-color);
+  font-size: var(--sb-font-size);
+  padding: var(--sb-vertical-padding) var(--sb-horizontal-padding);
+}
+
+.sb:hover {
+  --sb-color: var(--sb-hover-color);
+  --sb-border-color: var(--sb-hover-border-color);
+  --sb-background: var(--sb-hover-background);
+}
+
+.sb-primary {
+  --sb-color: white;
+  --sb-hover-color: white;
+  --sb-background: #0d6efd;
+  --sb-hover-background: #0b5ed7;
+  --sb-border-color: #0d6efd;
+  --sb-hover-border-color: #0a58ca;
+}
+
+.sb-secondary {
+  --sb-color: white;
+  --sb-hover-color: white;
+  --sb-background: #6c757d;
+  --sb-hover-background: #5c636a;
+  --sb-border-color: #6c757d;
+  --sb-hover-border-color: #565e64;
+}
+
+.sb-success {
+  --sb-color: white;
+  --sb-hover-color: white;
+  --sb-background: #198754;
+  --sb-hover-background: #157347;
+  --sb-border-color: #198754;
+  --sb-hover-border-color: #146c43;
+}
+
+.sb-danger {
+  --sb-color: white;
+  --sb-hover-color: white;
+  --sb-background: #dc3545;
+  --sb-hover-background: #bb2d3b;
+  --sb-border-color: #dc3545;
+  --sb-hover-border-color: #b02a37;
+}
+
+.sb-warning {
+  --sb-color: black;
+  --sb-hover-color: black;
+  --sb-background: #ffc107;
+  --sb-hover-background: #ffca2c;
+  --sb-border-color: #ffc107;
+  --sb-hover-border-color: #ffc720;
+}
+
+.sb-info {
+  --sb-color: black;
+  --sb-hover-color: black;
+  --sb-background: #0dcaf0;
+  --sb-hover-background: #31d2f2;
+  --sb-border-color: #0dcaf0;
+  --sb-hover-border-color: #25cff2;
+}
+
+.size-s {
+  --sb-font-size: 1rem;
+  --sb-horizontal-padding: 12px;
+  --sb-vertical-padding: 8px;
+}
+
+.size-m {
+  --sb-font-size: 1.2rem;
+  --sb-horizontal-padding: 24px;
+  --sb-vertical-padding: 12px;
+}
+
+.size-l {
+  --sb-font-size: 1.5rem;
+  --sb-horizontal-padding: 48px;
+  --sb-vertical-padding: 24px;
+}
+
+.rounded {
+  --sb-border-radius: 0.375rem;
+}
+
+.pill {
+  --sb-border-radius: 50rem;
 }

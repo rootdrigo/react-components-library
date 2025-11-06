@@ -1,13 +1,17 @@
 import './SimpleButton.css' 
 
-function SimpleButton() {
-  return (
-    <div className="SimpleButton">
-      <a className="SimpleButton-text SimpleButton-size-XXL SimpleButton-primary">
-        <span>Button text</span>
-      </a>
-    </div> 
-  )
-}
+  interface Props {
+    flavor: string;
+  }
 
-export default SimpleButton;
+  const SB = ({flavor}: Props) => {
+    return (
+      <>
+        <button className={'sb sb-' + flavor + ' pill size-s'}>
+          <span>text</span>
+        </button>
+      </>
+    )
+  }
+
+export default SB;
