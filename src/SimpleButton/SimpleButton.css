@@ -6,6 +6,7 @@ button:not(:disabled) {
   /*default values*/
   --sb-color: black;
   --sb-background: transparent;
+  --sb-background-opacity: 1;
   --sb-border-radius: 0.25rem;
   --sb-border-width: 1px;
   --sb-border-color: black;
@@ -18,7 +19,7 @@ button:not(:disabled) {
   vertical-align: middle;
   /*configuration*/
   color: var(--sb-color);
-  background-color: var(--sb-background);
+  background-color: color(from var(--sb-background) srgb r g b / var(--sb-background-opacity));
   border-radius: var(--sb-border-radius);
   border: var(--sb-border-width) solid var(--sb-border-color);
   font-size: var(--sb-font-size);
@@ -29,6 +30,7 @@ button:not(:disabled) {
   --sb-color: var(--sb-hover-color);
   --sb-border-color: var(--sb-hover-border-color);
   --sb-background: var(--sb-hover-background);
+  --sb-background-opacity: 1;
 }
 
 .sb-primary {
@@ -110,3 +112,14 @@ button:not(:disabled) {
 .pill {
   --sb-border-radius: 50rem;
 }
+
+.opacity-20 {
+  --sb-background-opacity: 0.20;
+  --sb-color: var(--sb-background);
+}
+
+.white-bg {
+  --sb-background: #fff;
+  --sb-color: var(--sb-border-color);
+}
+

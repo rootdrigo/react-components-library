@@ -1,1 +1,41 @@
 /*empty for now*/
+.sc-grid {
+  --sc-grid-rows: 1;
+  --sc-grid-cols: 1;
+  --sc-grid-gap: 1rem;
+  display: grid;
+  grid-template-rows: repeat(var(--sc-grid-rows),1fr);
+  grid-template-columns: repeat(var(--sc-grid-cols),1fr);
+  gap: var(--sc-grid-gap);
+}
+
+.sc-grid-rows-1 {
+  --sc-grid-rows: 1;
+}
+
+.sc-grid-cols-1 {
+  --sc-grid-cols: 1;
+}
+
+.sc-grid-gap-1 {
+  --sc-grid-gap: 1rem;
+}
+
+.sc-grid-rows-1 {
+  --sc-grid-rows: 1;
+}
+
+.sc-grid-rows-2 {
+  --sc-grid-rows: 2;
+}
+
+.sc-grid-cols-3 {
+  --sc-grid-cols: 3;
+}
+
+.sc-grid-cols-6 {
+  --sc-grid-cols: 6;
+}
+.sc-grid-gap-2 {
+  --sc-grid-gap: 1.2rem;
+}
