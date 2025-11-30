@@ -3,11 +3,23 @@ import './App.css'
 import SimpleMenu from './SimpleMenu.tsx'
 import SimpleButton from './SimpleButton/SimpleButton.tsx'
 import SimpleContainer from './SimpleContainer/SimpleContainer.tsx'
+import SimpleProductCard from './SimpleProductCard/SimpleProductCard.tsx'
 
 function App() {
   return (
     <>
       <SimpleMenu></SimpleMenu>
+      <SimpleContainer rows={1} cols={3} gap={2}>
+        <SimpleProductCard
+          header="Simple Artist"
+          demo="15.99"
+        ></SimpleProductCard>
+        <SimpleProductCard
+          header="Impressive artist"
+          description="Netflix has struck a deal set permanent production base Shepperton Studios from Alien Mary Poppins Returns"
+          demo="77.65"
+        ></SimpleProductCard>
+      </SimpleContainer>
       <SimpleContainer rows={6} cols={3} gap={2}>
           <SimpleButton size="l"></SimpleButton>
           <SimpleButton size="l" opacity="20"></SimpleButton>
