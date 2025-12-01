@@ -5,14 +5,15 @@ interface Props {
   header: string;
   description?: string;
   demo: int;
+  imgURL: string;
 }
 
-const card = ({header, description, demo}: Props) => {
+const card = ({header, description, demo, imgURL}: Props) => {
   return (
     <>
       <div className={'spc'}>
         <section className={'spc-img'}>
-          <img decoding="async" src="https://essential-addons.com/elementor/wp-content/uploads/2020/01/Clasic-Artist.png" alt="Static Product 105" title="Static Product 105"></img>
+          <img decoding="async" src={imgURL} alt={header} title={header}></img>
         </section>
         <section className={'spc-header'}>
           <h2>{header}</h2>

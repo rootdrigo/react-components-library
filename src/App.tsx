@@ -11,10 +11,12 @@ function App() {
       <SimpleMenu></SimpleMenu>
       <SimpleContainer rows={1} cols={3} gap={2}>
         <SimpleProductCard
+          imgURL=""
           header="Simple Artist"
           demo="15.99"
         ></SimpleProductCard>
         <SimpleProductCard
+          imgURL=""
           header="Impressive artist"
           description="Netflix has struck a deal set permanent production base Shepperton Studios from Alien Mary Poppins Returns"
           demo="77.65"
