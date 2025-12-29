@@ -4,11 +4,20 @@ import SimpleMenu from './SimpleMenu.tsx'
 import SimpleButton from './SimpleButton/SimpleButton.tsx'
 import SimpleContainer from './SimpleContainer/SimpleContainer.tsx'
 import SimpleProductCard from './SimpleProductCard/SimpleProductCard.tsx'
+import ShinyCard from './ShinyCard/ShinyCard.tsx'
 
 function App() {
   return (
     <>
       <SimpleMenu></SimpleMenu>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <ShinyCard></ShinyCard>
+      <br/>
+      <br/>
+      <br/>
       <SimpleContainer rows={1} cols={3} gap={2}>
         <SimpleProductCard
           imgURL=""
