@@ -1,0 +1,28 @@
+.register-container {
+  display: flex; /* Enables flexbox layout */
+  width: 100vw; /* Ensures the container uses the full available width */
+  gap: 20px; /* Optional: adds space between columns */
+}
+
+.column {
+  /* Common styling for both columns (e.g., padding, background) */
+  padding: 15px;
+  background-color: #f0f0f0;
+}
+
+.left {
+  flex-basis: 60%; /* Sets the initial width of the left column */
+  /* If you want more control over shrinking/growing, use the 'flex' shorthand: */
+  /* flex: 0 0 60%; */
+}
+
+.right {
+  flex-basis: 40%; /* Sets the initial width of the right column */
+  /* flex: 0 0 40%; */
+}
+
+#blob-eyes {
+  position: absolute;
+  top: 274px;
+  left: 408px;
+}
